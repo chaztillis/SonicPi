@@ -1,0 +1,13 @@
+
+x=1
+num = 10
+s= 0.5
+
+10.times do
+  puts (num)
+  sleep s
+  num = num - x
+end
+puts("HAPPY NEW YEAR!")
+
+
