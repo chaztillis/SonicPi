@@ -1,0 +1,20 @@
+# samples 2-6-24
+live_loop :beat do
+  sample :loop_breakbeat, beat_stretch: 2
+  sleep 2
+end
+
+live_loop :layer2 do
+  sample :bd_haus, amp: 0.5
+  sleep 2
+end
+
+live_loop :drum do
+  sample :drum_snare_soft
+  sleep 2
+end
+
+live_loop :high do
+  sample :ambi_soft_buzz, amp: 0.5
+  sleep 2
+end
