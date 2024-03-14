@@ -1,3 +1,4 @@
+Array Challenge 
 notes = [:drum_heavy_kick, :drum_cymbal_closed, :drum_snare_hard, :drum_tom_mid_hard, :drum_heavy_kick, :drum_cymbal_closed, :drum_snare_hard, :drum_tom_mid_hard]
 i = 0
 
@@ -6,3 +7,22 @@ i = 0
   sleep 1
   i = i + 1
 end
+
+Parameterized Function Challenge :(
+define :something do |n1, n2|
+  play :c4
+  sleep 0.5
+  play :c4
+  sleep 0.5
+  play :d4
+  sleep 0.5
+  play :c4
+  sleep 0.5
+  play n1
+  sleep 0.5
+  play n2
+  sleep 1
+end
+
+something :f4, :e4
+something :g4, :f4
