@@ -1,0 +1,8 @@
+notes = [:drum_heavy_kick, :drum_cymbal_closed, :drum_snare_hard, :drum_tom_mid_hard, :drum_heavy_kick, :drum_cymbal_closed, :drum_snare_hard, :drum_tom_mid_hard]
+i = 0
+
+8.times do
+  sample notes[i]
+  sleep 1
+  i = i + 1
+end
