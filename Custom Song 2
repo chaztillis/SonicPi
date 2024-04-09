@@ -1,17 +1,17 @@
 # https://musescore.com/user/36913242/scores/6610590
 # https://www.youtube.com/watch?v=EMnQwBTJnMM
 
-use_bpm 170
+use_bpm 165
 yespeaking = "C:/Users/chaz_tillis/Desktop/Runaway/yevocals.mp3"
 
 start = "C:/Users/chaz_tillis/Desktop/Runaway/chorus start.mp3"
 look = "C:/Users/chaz_tillis/Desktop/Runaway/lookatya.mp3"
 runaway = "C:/Users/chaz_tillis/Desktop/Runaway/runaway.mp3"
 ending = "C:/Users/chaz_tillis/Desktop/Runaway/ending.mp3"
-array = [start, look, runaway, ending]
-sleep = [54, 64, 15, 51]
+array = [look, start, runaway, ending]
+sleepy = [54, 64, 15, 51]
 x = 0
-
+  
 live_loop :keyz do
   4.times do
     10.times do
@@ -52,67 +52,64 @@ live_loop :keyz do
   end
   stop
 end
-
+define :main do |n1, n2, n3, n4, n5|
+  use_synth :rodeo
+  play n1, amp: 0.5
+  play n5, amp: 0.5
+  sleep 0.5
+  play n2, amp: 0.5
+  sleep 0.5
+  play n3, amp: 0.5
+  sleep 0.5
+  play n4, amp: 0.5
+  sleep 0.5
+  
+end
 sleep 64
-live_loop :pianer do
-  5.times do
-    define :main do |n1, n2, n3, n4, n5|
-      use_synth :rodeo
-      play n1, amp: 0.5
-      play n5, amp: 0.5
-      sleep 0.5
-      play n2, amp: 0.5
-      sleep 0.5
-      play n3, amp: 0.5
-      sleep 0.5
-      play n4, amp: 0.5
-      sleep 0.5
-    end
+
+live_loop :para do
+  4.times do
+    main :g3, :e3, :g3, :b3, :e2
+    main :g3, :e3, :g3, :b3, :r
+    main :g3, :e3, :g3, :b3, :e2
+    main :g3, :e3, :g3, :b3, :r
+    main :g3, :e3, :g3, :b3, :e2
+    main :g3, :e3, :g3, :b3, :r
+    main :g3, :e3, :g3, :b3, :e2
+    main :g3, :e3, :g3, :b3, :r
+    main :g3, :d3, :g3, :b3, :e2
+    main :g3, :d3, :g3, :b3, :r
+    main :g3, :d3, :g3, :b3, :e2
+    main :g3, :d3, :g3, :b3, :r
+    main :g3, :d3, :g3, :b3, :e2
+    main :g3, :d3, :g3, :b3, :r
+    main :g3, :d3, :g3, :b3, :e2
+    main :g3, :d3, :g3, :b3, :r
+    main :e3, :c3, :e3, :g3, :e2
+    main :e3, :c3, :e3, :g3, :r
+    main :e3, :c3, :e3, :g3, :e2
+    main :e3, :c3, :e3, :g3, :r
+    main :e3, :c3, :e3, :g3, :e2
+    main :e3, :c3, :e3, :g3, :r
+    main :e3, :c3, :e3, :g3, :e2
+    main :e3, :c3, :e3, :g3, :r
+    main :e3, :c3, :e3, :a3, :eb2
+    main :e3, :c3, :e3, :a3, :r
+    main :e3, :c3, :e3, :a3, :eb2
+    main :e3, :c3, :e3, :a3, :r
+    main :e3, :c3, :e3, :a3, :eb2
+    main :e3, :c3, :e3, :a3, :r
+    main :e3, :c3, :e3, :a3, :eb2
+    main :e3, :c3, :e3, :a3, :r
   end
   stop
 end
 
-2.times do
-  main :g3, :e3, :g3, :b3, :e2
-  main :g3, :e3, :g3, :b3, :r
-  main :g3, :e3, :g3, :b3, :e2
-  main :g3, :e3, :g3, :b3, :r
-  main :g3, :e3, :g3, :b3, :e2
-  main :g3, :e3, :g3, :b3, :r
-  main :g3, :e3, :g3, :b3, :e2
-  main :g3, :e3, :g3, :b3, :r
-  main :g3, :d3, :g3, :b3, :e2
-  main :g3, :d3, :g3, :b3, :r
-  main :g3, :d3, :g3, :b3, :e2
-  main :g3, :d3, :g3, :b3, :r
-  main :g3, :d3, :g3, :b3, :e2
-  main :g3, :d3, :g3, :b3, :r
-  main :g3, :d3, :g3, :b3, :e2
-  main :g3, :d3, :g3, :b3, :r
-  main :e3, :c3, :e3, :g3, :e2
-  main :e3, :c3, :e3, :g3, :r
-  main :e3, :c3, :e3, :g3, :e2
-  main :e3, :c3, :e3, :g3, :r
-  main :e3, :c3, :e3, :g3, :e2
-  main :e3, :c3, :e3, :g3, :r
-  main :e3, :c3, :e3, :g3, :e2
-  main :e3, :c3, :e3, :g3, :r
-  main :e3, :c3, :e3, :a3, :eb2
-  main :e3, :c3, :e3, :a3, :r
-  main :e3, :c3, :e3, :a3, :eb2
-  main :e3, :c3, :e3, :a3, :r
-  main :e3, :c3, :e3, :a3, :eb2
-  main :e3, :c3, :e3, :a3, :r
-  main :e3, :c3, :e3, :a3, :eb2
-  main :e3, :c3, :e3, :a3, :r
-end
-
-
-sleep 128
+sleep 70
 live_loop :vocals do
   4.times do
     sample array[x]
-    sleep sleep[x]
+    sleep sleepy[x]
     x = x + 1
   end
 end
